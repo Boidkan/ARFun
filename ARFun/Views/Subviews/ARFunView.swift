@@ -22,7 +22,7 @@ struct ARFunView: UIViewRepresentable {
            let entity = model.entity?.clone(recursive: true) {
 
             let plane: AnchoringComponent.Target.Alignment = .any
-            let anchor = AnchorEntity(plane: plane)
+            let anchor = AnchorEntity(plane: plane) // This causes an error when building for previews
             anchor.addChild(entity)
             uiView.scene.addAnchor(anchor)
 
