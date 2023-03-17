@@ -60,13 +60,13 @@ struct ARPictureTakerView: View {
                     }
                     
                     Button {
-                        filterType = .fox
+                        filterType = .dog
                     } label: {
                         ZStack {
                             Rectangle()
                                 .frame(width: 80, height: 80)
                                 .cornerRadius(15)
-                            Text("🦊")
+                            Text("🐶")
                         }
                     }
                     .buttonStyle(PlainButtonStyle())

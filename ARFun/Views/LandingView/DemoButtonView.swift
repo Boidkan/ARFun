@@ -18,6 +18,7 @@ struct DemoButtonView: View {
                     .resizable()
                     .frame(maxWidth: 50, maxHeight: 50)
                     .scaledToFit()
+                    .foregroundColor(.blue)
                     .padding(.leading, 0)
                 
                 Text(demo.description)
@@ -30,7 +31,6 @@ struct DemoButtonView: View {
                 Image(systemName: "chevron.right")
                     .foregroundColor(.blue)
                     .padding(.trailing, 0)
-                    .background(.blue)
                     
             }
             .background(.white)

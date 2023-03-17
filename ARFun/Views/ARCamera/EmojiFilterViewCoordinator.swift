@@ -9,7 +9,7 @@ import SwiftUI
 import ARKit
 
 enum ARFaceFilterType {
-    case fox
+    case dog
     case emojis
 }
 
@@ -26,7 +26,7 @@ enum ARFaceNodeType: String {
     
     static func types(for filterType: ARFaceFilterType) -> [ARFaceNodeType] {
         switch filterType {
-        case .fox:
+        case .dog:
             return [.face]
         case .emojis:
             return [.hat, .leftEye, .rightEye, .mouth]
@@ -36,7 +36,7 @@ enum ARFaceNodeType: String {
     var emojis: [String] {
         switch self {
         case .hat: return ["🎩"]
-        case .face: return ["🦊"]
+        case .face: return ["🐶"]
         case .leftEye, .rightEye: return ["👁"]
         case .mouth: return ["👅"]
         }
@@ -120,7 +120,7 @@ class EmojiFilterViewCoordinator: NSObject, ARSCNViewDelegate {
         node.enumerateChildNodes { node, _ in
             if filterType == .emojis {
                 node.isHidden = node.name == ARFaceNodeType.face.rawValue
-            } else if filterType == .fox {
+            } else if filterType == .dog {
                 guard let name = node.name else { return }
                 node.isHidden = emojiNames.contains(name)
             }
@@ -149,7 +149,7 @@ class EmojiFilterViewCoordinator: NSObject, ARSCNViewDelegate {
         
         guard let filterType = filterType else { return }
         
-        if filterType == .fox {
+        if filterType == .dog {
             guard let child = node.childNode(withName: ARFaceNodeType.face.rawValue, recursively: false) as? EmojiNode else { return }
             let vertices = [anchor.geometry.vertices[15]]
             child.updatePosition(for: vertices)
