@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0401FE1129C2B9DC00A16457 /* ARFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE1029C2B9DC00A16457 /* ARFunApp.swift */; };
+		0401FE1329C2B9DC00A16457 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE1229C2B9DC00A16457 /* ContentView.swift */; };
+		0401FE1529C2B9DC00A16457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE1429C2B9DC00A16457 /* Assets.xcassets */; };
+		0401FE1829C2B9DC00A16457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE1729C2B9DC00A16457 /* Preview Assets.xcassets */; };
+		0401FE2229C2B9DC00A16457 /* ARFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE2129C2B9DC00A16457 /* ARFunTests.swift */; };
+		0401FE2C29C2B9DC00A16457 /* ARFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE2B29C2B9DC00A16457 /* ARFunUITests.swift */; };
+		0401FE2E29C2B9DC00A16457 /* ARFunUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE2D29C2B9DC00A16457 /* ARFunUITestsLaunchTests.swift */; };
+		0401FE4229C39CF500A16457 /* EmojiFilterViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE3D29C39CF500A16457 /* EmojiFilterViewCoordinator.swift */; };
+		0401FE4329C39CF500A16457 /* ARPictureTakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE3E29C39CF500A16457 /* ARPictureTakerView.swift */; };
+		0401FE4429C39CF500A16457 /* EmojiNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE3F29C39CF500A16457 /* EmojiNode.swift */; };
+		0401FE4529C39CF500A16457 /* EmojiFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE4029C39CF500A16457 /* EmojiFilterView.swift */; };
+		0401FE4629C39CF500A16457 /* FadeOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE4129C39CF500A16457 /* FadeOutView.swift */; };
+		0401FE4929C3AB3600A16457 /* ImageSaverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE4829C3AB3600A16457 /* ImageSaverService.swift */; };
+		0401FE4D29C3AD5400A16457 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE4C29C3AD5400A16457 /* String+UIImage.swift */; };
+		0401FE5C29C3B39400A16457 /* ARContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE4F29C3B39400A16457 /* ARContentView.swift */; };
+		0401FE5D29C3B39400A16457 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE5129C3B39400A16457 /* FocusARView.swift */; };
+		0401FE5E29C3B39400A16457 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE5329C3B39400A16457 /* PlacementButtonsView.swift */; };
+		0401FE5F29C3B39400A16457 /* ARObjectPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE5429C3B39400A16457 /* ARObjectPickerView.swift */; };
+		0401FE6029C3B39400A16457 /* ARFunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE5529C3B39400A16457 /* ARFunView.swift */; };
+		0401FE6129C3B39400A16457 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE5729C3B39400A16457 /* flower_tulip.usdz */; };
+		0401FE6229C3B39400A16457 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE5829C3B39400A16457 /* chair_swan.usdz */; };
+		0401FE6329C3B39400A16457 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE5929C3B39400A16457 /* teapot.usdz */; };
+		0401FE6429C3B39400A16457 /* robot_walk_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE5A29C3B39400A16457 /* robot_walk_idle.usdz */; };
+		0401FE6529C3B39400A16457 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE5B29C3B39400A16457 /* cup_saucer_set.usdz */; };
+		0401FE6829C3B82500A16457 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 0401FE6729C3B82500A16457 /* FocusEntity */; };
+		0401FE6B29C3B95700A16457 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE6A29C3B95700A16457 /* ARModel.swift */; };
+		0401FE6D29C3F5B900A16457 /* DemoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE6C29C3F5B900A16457 /* DemoButtonView.swift */; };
+		0401FE6F29C3F66E00A16457 /* DemoSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE6E29C3F66E00A16457 /* DemoSummary.swift */; };
+		0401FE7129C3F73B00A16457 /* View+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE7029C3F73B00A16457 /* View+Styling.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0401FE1E29C2B9DC00A16457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0401FE0529C2B9DC00A16457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0401FE0C29C2B9DC00A16457;
+			remoteInfo = ARFun;
+		};
+		0401FE2829C2B9DC00A16457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0401FE0529C2B9DC00A16457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0401FE0C29C2B9DC00A16457;
+			remoteInfo = ARFun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0401FE0D29C2B9DC00A16457 /* ARFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE1029C2B9DC00A16457 /* ARFunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFunApp.swift; sourceTree = "<group>"; };
+		0401FE1229C2B9DC00A16457 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0401FE1429C2B9DC00A16457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0401FE1729C2B9DC00A16457 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0401FE1D29C2B9DC00A16457 /* ARFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE2129C2B9DC00A16457 /* ARFunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFunTests.swift; sourceTree = "<group>"; };
+		0401FE2729C2B9DC00A16457 /* ARFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE2B29C2B9DC00A16457 /* ARFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFunUITests.swift; sourceTree = "<group>"; };
+		0401FE2D29C2B9DC00A16457 /* ARFunUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFunUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0401FE3D29C39CF500A16457 /* EmojiFilterViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiFilterViewCoordinator.swift; sourceTree = "<group>"; };
+		0401FE3E29C39CF500A16457 /* ARPictureTakerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPictureTakerView.swift; sourceTree = "<group>"; };
+		0401FE3F29C39CF500A16457 /* EmojiNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiNode.swift; sourceTree = "<group>"; };
+		0401FE4029C39CF500A16457 /* EmojiFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiFilterView.swift; sourceTree = "<group>"; };
+		0401FE4129C39CF500A16457 /* FadeOutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutView.swift; sourceTree = "<group>"; };
+		0401FE4829C3AB3600A16457 /* ImageSaverService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaverService.swift; sourceTree = "<group>"; };
+		0401FE4C29C3AD5400A16457 /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
+		0401FE4F29C3B39400A16457 /* ARContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARContentView.swift; sourceTree = "<group>"; };
+		0401FE5129C3B39400A16457 /* FocusARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
+		0401FE5329C3B39400A16457 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
+		0401FE5429C3B39400A16457 /* ARObjectPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARObjectPickerView.swift; sourceTree = "<group>"; };
+		0401FE5529C3B39400A16457 /* ARFunView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARFunView.swift; sourceTree = "<group>"; };
+		0401FE5729C3B39400A16457 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		0401FE5829C3B39400A16457 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		0401FE5929C3B39400A16457 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		0401FE5A29C3B39400A16457 /* robot_walk_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot_walk_idle.usdz; sourceTree = "<group>"; };
+		0401FE5B29C3B39400A16457 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		0401FE6A29C3B95700A16457 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		0401FE6C29C3F5B900A16457 /* DemoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoButtonView.swift; sourceTree = "<group>"; };
+		0401FE6E29C3F66E00A16457 /* DemoSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSummary.swift; sourceTree = "<group>"; };
+		0401FE7029C3F73B00A16457 /* View+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Styling.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0401FE0A29C2B9DC00A16457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE6829C3B82500A16457 /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE1A29C2B9DC00A16457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE2429C2B9DC00A16457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0401FE0429C2B9DC00A16457 = {
+			isa = PBXGroup;
+			children = (
+				0401FE0F29C2B9DC00A16457 /* ARFun */,
+				0401FE2029C2B9DC00A16457 /* ARFunTests */,
+				0401FE2A29C2B9DC00A16457 /* ARFunUITests */,
+				0401FE0E29C2B9DC00A16457 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0401FE0E29C2B9DC00A16457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE0D29C2B9DC00A16457 /* ARFun.app */,
+				0401FE1D29C2B9DC00A16457 /* ARFunTests.xctest */,
+				0401FE2729C2B9DC00A16457 /* ARFunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0401FE0F29C2B9DC00A16457 /* ARFun */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE1029C2B9DC00A16457 /* ARFunApp.swift */,
+				0401FE6929C3B94800A16457 /* Models */,
+				0401FE4B29C3AD3300A16457 /* Views */,
+				0401FE4729C3AB2800A16457 /* Services */,
+				0401FE4A29C3AD2800A16457 /* Helpers */,
+				0401FE1429C2B9DC00A16457 /* Assets.xcassets */,
+				0401FE1629C2B9DC00A16457 /* Preview Content */,
+			);
+			path = ARFun;
+			sourceTree = "<group>";
+		};
+		0401FE1629C2B9DC00A16457 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE1729C2B9DC00A16457 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0401FE2029C2B9DC00A16457 /* ARFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE2129C2B9DC00A16457 /* ARFunTests.swift */,
+			);
+			path = ARFunTests;
+			sourceTree = "<group>";
+		};
+		0401FE2A29C2B9DC00A16457 /* ARFunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE2B29C2B9DC00A16457 /* ARFunUITests.swift */,
+				0401FE2D29C2B9DC00A16457 /* ARFunUITestsLaunchTests.swift */,
+			);
+			path = ARFunUITests;
+			sourceTree = "<group>";
+		};
+		0401FE3C29C39CF500A16457 /* ARCamera */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE3D29C39CF500A16457 /* EmojiFilterViewCoordinator.swift */,
+				0401FE3E29C39CF500A16457 /* ARPictureTakerView.swift */,
+				0401FE3F29C39CF500A16457 /* EmojiNode.swift */,
+				0401FE4029C39CF500A16457 /* EmojiFilterView.swift */,
+				0401FE4129C39CF500A16457 /* FadeOutView.swift */,
+			);
+			path = ARCamera;
+			sourceTree = "<group>";
+		};
+		0401FE4729C3AB2800A16457 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE4829C3AB3600A16457 /* ImageSaverService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0401FE4A29C3AD2800A16457 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE4C29C3AD5400A16457 /* String+UIImage.swift */,
+				0401FE7029C3F73B00A16457 /* View+Styling.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0401FE4B29C3AD3300A16457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE7229C4207300A16457 /* LandingView */,
+				0401FE4E29C3B36100A16457 /* ARInteraction */,
+				0401FE3C29C39CF500A16457 /* ARCamera */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0401FE4E29C3B36100A16457 /* ARInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE4F29C3B39400A16457 /* ARContentView.swift */,
+				0401FE5029C3B39400A16457 /* Subviews */,
+				0401FE5629C3B39400A16457 /* USDZs */,
+			);
+			name = ARInteraction;
+			sourceTree = "<group>";
+		};
+		0401FE5029C3B39400A16457 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE5529C3B39400A16457 /* ARFunView.swift */,
+				0401FE5129C3B39400A16457 /* FocusARView.swift */,
+				0401FE5229C3B39400A16457 /* ObjectSelection */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		0401FE5229C3B39400A16457 /* ObjectSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE5329C3B39400A16457 /* PlacementButtonsView.swift */,
+				0401FE5429C3B39400A16457 /* ARObjectPickerView.swift */,
+			);
+			path = ObjectSelection;
+			sourceTree = "<group>";
+		};
+		0401FE5629C3B39400A16457 /* USDZs */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE5729C3B39400A16457 /* flower_tulip.usdz */,
+				0401FE5829C3B39400A16457 /* chair_swan.usdz */,
+				0401FE5929C3B39400A16457 /* teapot.usdz */,
+				0401FE5A29C3B39400A16457 /* robot_walk_idle.usdz */,
+				0401FE5B29C3B39400A16457 /* cup_saucer_set.usdz */,
+			);
+			path = USDZs;
+			sourceTree = "<group>";
+		};
+		0401FE6929C3B94800A16457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE6A29C3B95700A16457 /* ARModel.swift */,
+				0401FE6E29C3F66E00A16457 /* DemoSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0401FE7229C4207300A16457 /* LandingView */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE6C29C3F5B900A16457 /* DemoButtonView.swift */,
+				0401FE1229C2B9DC00A16457 /* ContentView.swift */,
+			);
+			path = LandingView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0401FE0C29C2B9DC00A16457 /* ARFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0401FE3129C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFun" */;
+			buildPhases = (
+				0401FE0929C2B9DC00A16457 /* Sources */,
+				0401FE0A29C2B9DC00A16457 /* Frameworks */,
+				0401FE0B29C2B9DC00A16457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARFun;
+			packageProductDependencies = (
+				0401FE6729C3B82500A16457 /* FocusEntity */,
+			);
+			productName = ARFun;
+			productReference = 0401FE0D29C2B9DC00A16457 /* ARFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0401FE1C29C2B9DC00A16457 /* ARFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0401FE3429C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFunTests" */;
+			buildPhases = (
+				0401FE1929C2B9DC00A16457 /* Sources */,
+				0401FE1A29C2B9DC00A16457 /* Frameworks */,
+				0401FE1B29C2B9DC00A16457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0401FE1F29C2B9DC00A16457 /* PBXTargetDependency */,
+			);
+			name = ARFunTests;
+			productName = ARFunTests;
+			productReference = 0401FE1D29C2B9DC00A16457 /* ARFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0401FE2629C2B9DC00A16457 /* ARFunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0401FE3729C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFunUITests" */;
+			buildPhases = (
+				0401FE2329C2B9DC00A16457 /* Sources */,
+				0401FE2429C2B9DC00A16457 /* Frameworks */,
+				0401FE2529C2B9DC00A16457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0401FE2929C2B9DC00A16457 /* PBXTargetDependency */,
+			);
+			name = ARFunUITests;
+			productName = ARFunUITests;
+			productReference = 0401FE2729C2B9DC00A16457 /* ARFunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0401FE0529C2B9DC00A16457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0401FE0C29C2B9DC00A16457 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0401FE1C29C2B9DC00A16457 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0401FE0C29C2B9DC00A16457;
+					};
+					0401FE2629C2B9DC00A16457 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0401FE0C29C2B9DC00A16457;
+					};
+				};
+			};
+			buildConfigurationList = 0401FE0829C2B9DC00A16457 /* Build configuration list for PBXProject "ARFun" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0401FE0429C2B9DC00A16457;
+			packageReferences = (
+				0401FE6629C3B82500A16457 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = 0401FE0E29C2B9DC00A16457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0401FE0C29C2B9DC00A16457 /* ARFun */,
+				0401FE1C29C2B9DC00A16457 /* ARFunTests */,
+				0401FE2629C2B9DC00A16457 /* ARFunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0401FE0B29C2B9DC00A16457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE6129C3B39400A16457 /* flower_tulip.usdz in Resources */,
+				0401FE6529C3B39400A16457 /* cup_saucer_set.usdz in Resources */,
+				0401FE1829C2B9DC00A16457 /* Preview Assets.xcassets in Resources */,
+				0401FE6229C3B39400A16457 /* chair_swan.usdz in Resources */,
+				0401FE1529C2B9DC00A16457 /* Assets.xcassets in Resources */,
+				0401FE6329C3B39400A16457 /* teapot.usdz in Resources */,
+				0401FE6429C3B39400A16457 /* robot_walk_idle.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE1B29C2B9DC00A16457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE2529C2B9DC00A16457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0401FE0929C2B9DC00A16457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE5F29C3B39400A16457 /* ARObjectPickerView.swift in Sources */,
+				0401FE4229C39CF500A16457 /* EmojiFilterViewCoordinator.swift in Sources */,
+				0401FE7129C3F73B00A16457 /* View+Styling.swift in Sources */,
+				0401FE5E29C3B39400A16457 /* PlacementButtonsView.swift in Sources */,
+				0401FE1329C2B9DC00A16457 /* ContentView.swift in Sources */,
+				0401FE4329C39CF500A16457 /* ARPictureTakerView.swift in Sources */,
+				0401FE4429C39CF500A16457 /* EmojiNode.swift in Sources */,
+				0401FE4529C39CF500A16457 /* EmojiFilterView.swift in Sources */,
+				0401FE5C29C3B39400A16457 /* ARContentView.swift in Sources */,
+				0401FE6F29C3F66E00A16457 /* DemoSummary.swift in Sources */,
+				0401FE4D29C3AD5400A16457 /* String+UIImage.swift in Sources */,
+				0401FE1129C2B9DC00A16457 /* ARFunApp.swift in Sources */,
+				0401FE4629C39CF500A16457 /* FadeOutView.swift in Sources */,
+				0401FE6D29C3F5B900A16457 /* DemoButtonView.swift in Sources */,
+				0401FE6B29C3B95700A16457 /* ARModel.swift in Sources */,
+				0401FE5D29C3B39400A16457 /* FocusARView.swift in Sources */,
+				0401FE4929C3AB3600A16457 /* ImageSaverService.swift in Sources */,
+				0401FE6029C3B39400A16457 /* ARFunView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE1929C2B9DC00A16457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE2229C2B9DC00A16457 /* ARFunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE2329C2B9DC00A16457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE2C29C2B9DC00A16457 /* ARFunUITests.swift in Sources */,
+				0401FE2E29C2B9DC00A16457 /* ARFunUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0401FE1F29C2B9DC00A16457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0401FE0C29C2B9DC00A16457 /* ARFun */;
+			targetProxy = 0401FE1E29C2B9DC00A16457 /* PBXContainerItemProxy */;
+		};
+		0401FE2929C2B9DC00A16457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0401FE0C29C2B9DC00A16457 /* ARFun */;
+			targetProxy = 0401FE2829C2B9DC00A16457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0401FE2F29C2B9DC00A16457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0401FE3029C2B9DC00A16457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0401FE3229C2B9DC00A16457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARFun/Preview Content\"";
+				DEVELOPMENT_TEAM = TMTETVW362;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your camera us needed in order to take selfies with filters.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0401FE3329C2B9DC00A16457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARFun/Preview Content\"";
+				DEVELOPMENT_TEAM = TMTETVW362;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your camera us needed in order to take selfies with filters.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0401FE3529C2B9DC00A16457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARFun.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARFun";
+			};
+			name = Debug;
+		};
+		0401FE3629C2B9DC00A16457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARFun.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARFun";
+			};
+			name = Release;
+		};
+		0401FE3829C2B9DC00A16457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARFun;
+			};
+			name = Debug;
+		};
+		0401FE3929C2B9DC00A16457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.ARFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARFun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0401FE0829C2B9DC00A16457 /* Build configuration list for PBXProject "ARFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE2F29C2B9DC00A16457 /* Debug */,
+				0401FE3029C2B9DC00A16457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0401FE3129C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE3229C2B9DC00A16457 /* Debug */,
+				0401FE3329C2B9DC00A16457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0401FE3429C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE3529C2B9DC00A16457 /* Debug */,
+				0401FE3629C2B9DC00A16457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0401FE3729C2B9DC00A16457 /* Build configuration list for PBXNativeTarget "ARFunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE3829C2B9DC00A16457 /* Debug */,
+				0401FE3929C2B9DC00A16457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0401FE6629C3B82500A16457 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0401FE6729C3B82500A16457 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0401FE6629C3B82500A16457 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0401FE0529C2B9DC00A16457 /* Project object */;
+}
