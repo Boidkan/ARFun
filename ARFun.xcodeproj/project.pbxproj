@@ -266,8 +266,8 @@
 		0401FE7229C4207300A16457 /* LandingView */ = {
 			isa = PBXGroup;
 			children = (
-				0401FE6C29C3F5B900A16457 /* DemoButtonView.swift */,
 				0401FE1229C2B9DC00A16457 /* ContentView.swift */,
+				0401FE6C29C3F5B900A16457 /* DemoButtonView.swift */,
 			);
 			path = LandingView;
 			sourceTree = "<group>";
