@@ -1,5 +1,5 @@
 //
-//  RestlessARView.swift
+//  ARFunView.swift
 //  marketing-app
 //
 //  Created by eric collom on 2/22/23.
@@ -34,7 +34,7 @@ struct ARFunView: UIViewRepresentable {
 }
 
 
-struct RestlessARView_Previews: PreviewProvider {
+struct ARFunView_Previews: PreviewProvider {
     static var previews: some View {
         ARFunView(modelConfirmedForPlacement: .constant(nil))
     }
